@@ -1,0 +1,39 @@
+---
+title: Contato
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 4
+map:
+  latitude: -45.8787605
+  longitude: 170.5027976
+  zoom: 13
+---
+
+<p class="editable">
+	Venha nos contatar pessoalmente, nos faça uma ligação ou nos mande uma mensagem
+	com os detalhes do seu caso e entraremos em contato.
+</p>
+
+<div class="columns">
+	<div class="column">
+		<p class="editor-link"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
+
+		<label>Telefone</label>
+		<p class="contact-info"><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></p>
+
+		<label>Whatsapp</label>
+		<p class="contact-info"><a href="https://api.whatsapp.com/send?phone=+55{{ site.data.company.whatsapp_phone_for_api }}">{{ site.data.company.whatsapp_phone_for_show }}</a></p>
+
+		<label>Email</label>
+		<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
+
+		<label>Endereço</label>
+		<address class="contact-info">{{ site.data.company.postal_address | replace: ',', '<br>' }}</address>
+	</div>
+
+	<div class="column">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.681810832179!2d-48.674015385292805!3d-27.63436968282219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952735988425277d%3A0x36d5208dfa9c68ce!2sR.%20Jos%C3%A9%20Leonidio%20Vi%C3%AAira%2C%20209%20-%20Passa%20Vinte%2C%20Palho%C3%A7a%20-%20SC%2C%2088133-150!5e0!3m2!1spt-BR!2sbr!4v1573415411697!5m2!1spt-BR!2sbr" 
+			class="google-maps" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+</div>
